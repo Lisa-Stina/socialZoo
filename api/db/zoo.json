@@ -1,90 +1,90 @@
+[{
+		"name": " Berlin Tiergarten",
+		"country": "Germany",
+		"city": "Berlin",
+		"category": "Zoo",
+		"openingYear": "1844",
+		"numberAnimals": "18662",
+		"picture": "../img/ours.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	},
 
-{
- "name":" Berlin Tiergarten",
- "country":"Germany",
- "city":"Berlin",
- "category":"Zoo",
- "openingYear": "1844",
- "numberAnimals":"18662",
- "picture":"../img/ours.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-},
+	{
+		"name": "Ueno Zoological Gardens",
+		"country": "Japon",
+		"city": "Ueno",
+		"category": "Zoo",
+		"openingYear": "1882",
+		"numberAnimals": "3000",
+		"picture": "../img/koala.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	},
 
-{
- "name":"Ueno Zoological Gardens",
- "country":"Japon",
- "city":"Ueno",
- "category":"Zoo",
- "openingYear": "1882",
- "numberAnimals":"3000",
- "picture":"../img/koala.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-},
+	{
+		"name": "Parc Zoologique National de Rabat",
+		"country": "Maroc",
+		"city": "Rabat",
+		"category": "Zoo",
+		"openingYear": "1973",
+		"numberAnimals": "2150",
+		"picture": "../img/leo.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	},
 
-{
- "name":"Parc Zoologique National de Rabat",
- "country":"Maroc",
- "city":"Rabat",
- "category":"Zoo",
- "openingYear": "1973",
- "numberAnimals":"2150",
- "picture":"../img/leo.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-},
+	{
+		"name": "Taronga Zoo",
+		"country": "Australia",
+		"city": "Sydney",
+		"category": "Zoo",
+		"openingYear": "1916",
+		"numberAnimals": "2050",
+		"picture": "../img/pink.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	},
 
-{
- "name":"Taronga Zoo",
- "country":"Australia",
- "city":"Sydney",
- "category":"Zoo",
- "openingYear": "1916",
- "numberAnimals":"2050",
- "picture":"../img/pink.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-},
+	{
+		"name": "Ripley's Aquarium of Canada",
+		"country": "Canada",
+		"city": "Toronto",
+		"category": "Aquarium",
+		"openingYear": "2013",
+		"numberAnimals": "2150",
+		"picture": "../img/croco.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	},
 
-{
- "name":"Ripley's Aquarium of Canada",
- "country":"Canada",
- "city":"Toronto",
- "category":"Aquarium",
- "openingYear": "2013",
- "numberAnimals":"2150",
- "picture":"../img/croco.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-},
-
-{
- "name":"Buenos Aires Zoo",
- "country":"Argentina",
- "city":"Buenos Aires",
- "category":"Zoo",
- "openingYear": "1875",
- "numberAnimals":"1850",
- "picture":"../img/lion.jpg",
- "reviews": [{
-     "name": "Top",
-     "id": "/user/top.json",
-     "review": "Great hotel"
- }],
-}
+	{
+		"name": "Buenos Aires Zoo",
+		"country": "Argentina",
+		"city": "Buenos Aires",
+		"category": "Zoo",
+		"openingYear": "1875",
+		"numberAnimals": "1850",
+		"picture": "../img/lion.jpg",
+		"reviews": [{
+			"name": "Top",
+			"id": "/user/top.json",
+			"review": "Great hotel"
+		}]
+	}
+]

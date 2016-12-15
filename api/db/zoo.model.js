@@ -37,4 +37,4 @@ var zoo = new mongoose.Schema({
 
   });
 
-  mongoose.model('zoo', zoo);
+  mongoose.model('zoo', zoo, "zoos");

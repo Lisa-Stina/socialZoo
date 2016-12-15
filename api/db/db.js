@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://localhost:27017/hackaton2';
+var dburl = 'mongodb://socialzoo:281710b@ds133348.mlab.com:33348/firsttry';
 var retry = null;
 mongoose.connect(dburl);
 
