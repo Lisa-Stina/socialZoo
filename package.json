@@ -1,0 +1,29 @@
+{
+  "name": "sociolzoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisa-Stina/socialZoo.git"
+  },
+  "author": "barbara et lisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lisa-Stina/socialZoo/issues"
+  },
+  "homepage": "https://github.com/Lisa-Stina/socialZoo#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "uuid": "^3.0.1"
+  }
+}
