@@ -1,0 +1,123 @@
+.parallax-container {
+  height: 500px;
+  margin-top: 20px;
+}
+
+/*B&W*/
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.bw:hover {
+  -webkit-filter: brightness(0.4);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+.brand-logo{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.logo{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+
+
+/* label color */
+ .input-field label {
+   color: #2e7d32;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #2e7d32;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #2e7d32;
+   box-shadow: 0 1px 0 0 #2e7d32;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #43a047;
+   box-shadow: 0 1px 0 0 #43a047;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #b71c1c;
+   box-shadow: 0 1px 0 0 #b71c1c;
+ }
+ .submit {
+   background: #2e7d32;
+   margin-bottom: 10px;
+}
+.delete {
+  background: #b71c1c;
+  margin-bottom: 10px;
+}
+.btn .btn-large .submit {
+  background-color: #2e7d32!important;
+}
+.form {
+  margin-top: 10px;
+}
+
+.side-nav a {
+  color: white!important;
+}
+.side-nav {
+  width: 150px;
+}
+.dropdown-content li  a {
+  color: #129A1C!important;
+}
+.space{
+  margin-top: 10px;
+}
+h3{
+  color: white;
+}
+.texteb {
+  color: #2e7d32!important;
+}
+.slide .slides{
+  height: 100%;
+}
+.header2 {
+  text-align: center;
+  color: #2e7d32;
+}
+.header3 {
+  text-align: center;
+  color: #4e342e ;
+}
+
+.who {
+  color: #4e342e;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.container{
+	width: 100%;
+	padding: 30px;
+	margin: auto;
+	background-color: #fff;
+}
+form{
+	margin-top: 30px;
+	input{
+		margin-bottom: 10px!important;
+	}
+}

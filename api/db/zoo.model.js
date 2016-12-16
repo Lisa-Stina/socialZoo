@@ -16,9 +16,10 @@ var reviewSchema = new mongoose.Schema({
 
 var zoo = new mongoose.Schema({
   name : String,
-  username : { type: String, required: true, unique: true },
-  password : { type: String, required: true },
+  username : { type: String, unique: true },
+  password : { type: String },
   email : {  type : String },
+  description: String,
   country : String,
   city : String,
   category : String,

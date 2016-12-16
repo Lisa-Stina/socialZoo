@@ -1,0 +1,85 @@
+<!-- Nom du zoo-et-categorie-date-location--------------------------------------------------------->
+<div class="container">
+  <h2 class="header2">Berlin Tiergarten</h2>
+  <h4 class="header3">Zoo since 1874</h4>
+  <h5 class="header3">Germany - Berlin</h5>
+
+<!-- Nom du zoo-et-categorie-date-location--------------------------------------------------------->
+
+<h5 class="texteb">Who are we?</h5>
+<!-- Description----------------------------------------------------------------------------------->
+<span><p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p></span>
+<!-- Description----------------------------------------------------------------------------------->
+
+
+<!-- animals number-------------------------------------------------------------------------------->
+<h5 class="texteb">More details:</h5>
+<!-- animals number-------------------------------------------------------------------------------->
+<span>
+<p>
+  Animals: 2850
+</p>
+</span>
+<!-- animals number-------------------------------------------------------------------------------->
+
+<!-- Comment-------------------------------------------------------------------------------->
+<h5 class="texteb">Comment:</h5>
+
+<div class="col s12">
+  <section>
+    <div ng-controller="PrimerControlador">
+      <ul>
+        <li ng-repeat="algo in comentarios">
+          <h6 class="who">{{algo.persona}} : </h6>
+          <p>{{algo.comen}}</p>
+        </li>
+      </ul>
+      <form>
+        <input placeholder="Name" ng-model="newComen.persona" type="text" class="form-control"/>
+        <input placeholder="Comment" ng-model="newComen.comen" type="text" class="form-control"/>
+        <button ng-click="agregarComentario()" class="btn submit">Send</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+<!-- Slider----------------------------------------------------------------->
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <a href="#/"><img src="img/meow.jpg"></a> <!-- random image -->
+    </li>
+    <li>
+      <a href="#/"><img src="img/corn.jpg"></a> <!-- random image -->
+    </li>
+    <li>
+      <a href="#/"><img src="img/wild.jpg"></a> <!-- random image -->
+    </li>
+    <li>
+      <a href="#/"><img src="img/flam.jpg"></a><!-- random image -->
+    </li>
+  </ul>
+</div>
+</div>
+<!-- Slider------------------------------------------------------------------>
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+</script>

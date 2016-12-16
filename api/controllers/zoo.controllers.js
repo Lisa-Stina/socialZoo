@@ -53,6 +53,7 @@ module.exports.ZooAddOne = function(req, res) {
       username : req.body.username,
       password : req.body.password,
       email: req.body.email,
+      description: req.body.description,
       country : req.body.country,
       city : req.body.city,
       category : req.body.category,
@@ -63,6 +64,7 @@ module.exports.ZooAddOne = function(req, res) {
       modifyOn : req.body.modifyOn
     }, function(err, zoo){
       if (err){
+        console.log(err);
         res
           .status(400)
           .json(err);
@@ -101,6 +103,7 @@ module.exports.ZooUpdateOne = function(req, res) {
       zoo.username = req.body.username,
       zoo.password = req.body.password,
       zoo.email = req.body.email,
+      zoo.description = req.body.description,
       zoo.country = req.body.country,
       zoo.city = req.body.city,
       zoo.category = req.body.category,

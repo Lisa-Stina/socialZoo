@@ -1,0 +1,61 @@
+<div class="container" ng-controller="newZooController">
+<!-- Comment-------------------------------------------------------------------------------->
+  <h5 class="texteb">Comment:</h5>
+  <br/>
+  <h6 class="texteb">Zoo Name:</h6>
+  <p>Super Zoo</p>
+  <h6 class="texteb">City:</h6>
+  <p>Paris</p>
+
+
+  <div class="col s12">
+    <section>
+      <div ng-controller="PrimerControlador">
+        <ul>
+          <li ng-repeat="algo in comentarios">
+            <h6 class="who">{{algo.persona}}  </h6>
+            <p>{{algo.comen}}</p>
+          </li>
+        </ul>
+        <form>
+          <input placeholder="Name" ng-model="newComen.persona" type="text" class="form-control"/>
+          <input placeholder="Comment" ng-model="newComen.comen" type="text" class="form-control"/>
+          <button ng-click="agregarComentario()" class="btn submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Slider----------------------------------------------------------------->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <a href="#/"><img src="img/meow.jpg"></a> <!-- random image -->
+      </li>
+      <li>
+        <a href="#/"><img src="img/corn.jpg"></a> <!-- random image -->
+      </li>
+      <li>
+        <a href="#/"><img src="img/wild.jpg"></a> <!-- random image -->
+      </li>
+      <li>
+        <a href="#/"><img src="img/flam.jpg"></a><!-- random image -->
+      </li>
+    </ul>
+  </div>
+  </div>
+  <!-- Slider------------------------------------------------------------------>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+</script>
