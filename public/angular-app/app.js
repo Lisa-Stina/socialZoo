@@ -22,21 +22,24 @@ app.config(['$routeProvider', function($routeProvider){
           controllerAs: 'vm'
         })
    .when("/zoo1",{
-          templateUrl: "partials/zoo1.html"
+          templateUrl: "partials/zoo1.html",
+          controller: newZooController,
+          controllerAs: 'vm'
         })
     .when("/zoo2",{
           templateUrl: "partials/zoo2.html"
 
        })
-    // .when("/zoo3",{
-    //           templateUrl: "partials/zoo2.html"
-    //           //controller: newZooController,
-    //           //controllerAs: 'vm'
-    //         })
+
+    .when("/zoo3",{
+               templateUrl: "partials/zoo3.html",
+               controller: mainController,
+               controllerAs: 'vm'
+             })
     // .when("/zoo/:zooId")
     // .otherwise({
     //   redirectTo: '/'
-    // });
+    //});
 }
 ]);
 //Routes------------------------------------------------------------------

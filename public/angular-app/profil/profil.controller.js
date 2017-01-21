@@ -1,35 +1,30 @@
 angular.module('socialZoo').controller('profilController', profilController);
 
-function profilController(zooDataFactory,$location){
-
+function profilController($route, $routeParams, zooDataFactory,$location) {
     var vm = this;
 
-    vm.register = function() {
+    var zoo = {};
+
+
+    zooDataFactory.postZoo(zoo).then(function(response){
+      vm.zoo = response.data;
+    });
+
+    vm.addZoo = function() {
       var zoo = {
         name: vm.name,
         category: vm.category,
         city: vm.city,
         country: vm.country,
-        openingYear: vm.opening_year,
+        openingYear: vm.openingYear,
         numberAnimals: vm.numberAnimals,
         description: vm.description,
         password: vm.password,
         email: vm.email,
       };
-      zooDataFactory.postZoo(zoo).then(function(result){
-        $location.path("/zoo2");
-      });
+      if (vm.addZoo) {
+         vm.zoo = response.data;      }
 
-    // vm.master = {};
-    //
-    // vm.update = function(zoo) {
-    //   vm.master = angular.copy(zoo);
-    // };
-    //
-    // vm.reset = function() {
-    //   vm.zoo = angular.copy(vm.master);
-    // };
-    //
-    // vm.reset();
-  };
+  }
+
 }

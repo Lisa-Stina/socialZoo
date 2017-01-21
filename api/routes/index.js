@@ -4,8 +4,6 @@ var router = express.Router();
 var ctrlZoo = require('../controllers/zoo.controllers.js');
 var ctrlReviews = require('../controllers/reviews.controllers.js');
 
-
-
 router
   .route('/zoo')
   .get(ctrlZoo.getAll)
@@ -14,8 +12,7 @@ router
 router
   .route('/zoo/:zooId')
   .get(ctrlZoo.ZooGetOne)
-  .put(ctrlZoo.ZooUpdateOne)
-  .delete(ctrlZoo.zooDeleteOne);
+  .put(ctrlZoo.ZooUpdateOne);
 
 router
   .route('/zoo/:zooId/reviews')
@@ -23,7 +20,7 @@ router
   .get(ctrlReviews.reviewGetAll);
 
 router
-    .route('/zoo/:zooId/reviews/:reviewsId')
+    .route('/zoo/:zooId/reviews/:reviewId')
     .get(ctrlReviews.reviewGetOne);
 
 

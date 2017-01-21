@@ -23,13 +23,13 @@ module.exports.getAll = function(req, res) {
 //////////////////////////////////////zooGetOne////////////////////////////////////////////////////////////
 
 module.exports.ZooGetOne = function(req, res) {
-  var zooId = req.params.zooId;
+  var id = req.params.zooId;
 
-  console.log('GET zooId', zooId);
+  console.log('GET zooId', id);
 
   Zoo
 
-    .findById(zooId)
+    .findById(id)
     .exec(function(err, zoo){
       if(err){
         res
@@ -57,8 +57,8 @@ module.exports.ZooAddOne = function(req, res) {
       country : req.body.country,
       city : req.body.city,
       category : req.body.category,
-      openingYear : req.body.openingYear,
-      numberAnimals : req.body.numberAnimals,
+      openingYear : parseInt(req.body.openingYear),
+      numberAnimals : parseInt(req.body.numberAnimals),
       picture : req.body.picture,
       createOn : req.body.createOn,
       modifyOn : req.body.modifyOn
@@ -77,81 +77,54 @@ module.exports.ZooAddOne = function(req, res) {
 };
 
 //////////////////////////////////////zooUpdateOne////////////////////////////////////////////////////////////
-
-module.exports.ZooUpdateOne = function(req, res) {
+module.exports.ZooUpdateOne = (req, res) => {
   var zooId = req.params.zooId;
 
+  console.log('Get zooId', zooId);
 
   Zoo
     .findById(zooId)
-    .exec(function(err, zoo) {
-      if (err) {
+    .select('-reviews')
+    .exec(function(err, zoo){
+      if (err){
+        console.log("Error finding zoo");
         res
           .status(500)
           .json(err);
           return;
       } else if(!zoo) {
+        console.log("ZooId not found in database", zooId);
         res
           .status(404)
           .json({
-            "message" : "zoo ID not found " + zooId
+            "message" : "Zoo Id not found " + id
           });
           return;
       }
-
-      zoo.name = req.body.name,
-      zoo.username = req.body.username,
-      zoo.password = req.body.password,
-      zoo.email = req.body.email,
-      zoo.description = req.body.description,
-      zoo.country = req.body.country,
-      zoo.city = req.body.city,
-      zoo.category = req.body.category,
-      zoo.openingYear = req.body.openingYear,
-      zoo.numberAnimals = req.body.numberAnimals,
-      zoo.picture = req.body.picture,
-      zoo.createOn = req.body.createOn,
-      zoo.modifyOn = req.body.modifyOn
-
-      zoo
-        .save(function(err, ZooUpdateOne)
-        {
-          if(err) {
-            res
-              .status(500)
-              .json(err);
-          } else {
-            res
-              .status(204)
-              .json();
-          }
-        });
+      zoo.name = req.body.name;
+      zoo.username = req.body.username;
+      zoo.password = req.body.password;
+      zoo.email = req.body.email;
+      zoo.description = req.body.description;
+      zoo.country = req.body.country;
+      zoo.city = req.body.city;
+      zoo.category = req.body.category;
+      zoo.openingYear = parseInt(req.body.openingYear);
+      zoo.numberAnimals = parseInt(req.body.numberAnimals);
+      zoo.picture = req.body.picture;
 
 
-    });
-
-};
-//////////////////////////////////////zooDeleteOne////////////////////////////////////////////////////////////
-
-
-module.exports.zooDeleteOne = function(req, res) {
-  var zoodeleteId = req.params.zoodeleteId;
-
-  Zoo
-    .findByIdAndRemove(zoodeleteId)
-    .exec(function(err, deletezoo) {
-      var response = {
-   message: "zoo successfully deleted",
-   id: zoodeleteId
-};
-      if(err){
-        res
-          .status(500)
-          .json(err)
-      }else{
-        res
-         .status(200)
-         .json(response);
-      }
+    zoo
+      .save(function(err, zooUpdated){
+        if(err){
+          res
+            .status(500)
+            .json(err);
+        } else {
+          res
+            .status(204)
+            .json();
+        }
+      });
     });
 };

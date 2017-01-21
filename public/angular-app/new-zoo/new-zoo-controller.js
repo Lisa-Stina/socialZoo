@@ -1,14 +1,21 @@
 angular.module('socialZoo').controller('newZooController', newZooController);
 
-function newZooController($routeParams,zooDataFactory) {
+function newZooController(zooDataFactory, $scope, $routeParams) {
   var vm = this;
-  //var id = $routeParams.zooId;
-
-  zooDataFactory.zooCreat().then(function(response) {
-    vm.zoos = response.data;
+  // //var id = $routeParams.zooId;
+  // zooDataFactory.zooCreat().then(function(response) {
+  //   vm.zoos = response.data;
     //vm.zooId = _getZoo(response.data.zoo);
 
-  });
+    var zooid = $routeParams.zooid;
+            vm.zoos = {};
+    zooDataFactory.ZooOne('5852c2da8b8686d9f42aaae3').then(function(response) {
+              vm.zoos = response.data;
+                console.log(vm.zoos);
+            });
+
+
+
 
 
 //   vm.addReview = function() {

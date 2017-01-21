@@ -1,4 +1,4 @@
-require('./api/db/db.js');
+ require('./api/db/db.js');
 var express = require('express');
 var app = express();
 var path = require('path');
